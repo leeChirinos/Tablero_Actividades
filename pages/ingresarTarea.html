@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Gestor de Tareas para Proyecto</title>
+  </head>
+  <body>
+    <header style="text-align: center;">
+      <div >
+        <img  
+          src="../Logo/logo_tablero_ac.png" style="width:50px; height:50px"
+          alt=""
+          class=""
+           />
+           <h1 class="Help-Desk">Gestor de Tareas</h1>
+      </div>
+      <div class="buscador-container">
+        <input type="text" id="cuadroBusqueda" placeholder="Buscar..." />
+        <button id="botonBusqueda">Buscar</button>
+    </div>
+         <nav>        
+        <ul id="lista_nav">
+          <li><a href="../index.html">Inicio</a></li> 
+          <li><a href="../pages/crearCuenta.html">Crear Cuenta</a></li>                  
+          </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Ingrese Tarea</h2>
+      <br />
+      <form
+        action="https://formspree.io/f/{form_id}"
+        method="post"
+        class="formulario"
+        style="border-style: double"
+      >
+    
+        <br />
+        <label for="nombre">Nombre del Proyecto [*]</label>
+        <input
+          type="text"
+          id=""
+          name=""
+          size="15"
+          maxlength="50"
+          placeholder="Ingrese nombre de proyecto"
+          required
+        />
+        <br /><br />
+        <label for="responsable">Responsable [*]</label>
+        <input
+          type="text"
+          id=""
+          name=""
+          size="15"
+          maxlength="20"
+          placeholder="Ingrese nombre de responsable"
+          required
+        /><br /><br />
+                
+        <input class="tarea-btn" type="submit" value="Agendar Tarea" />
+      </form>
+
+    </main>
+
+    <footer>
+      <nav>
+        <i
+          class="fa-brands fa-whatsapp"
+          style="color: green; font-size: 40px"
+        ></i>
+        <i
+          class="fa-brands fa-instagram"
+          style="color: red; font-size: 40px"
+        ></i>
+        <i class="fa-brands fa-github sy" style="font-size: 40px"></i>
+      </nav>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/2067fe5f8f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Gestor de Tareas para Proyecto</title>
+  </head>
+  <body>
+    <header style="text-align: center;">
+      <div >
+        <img  
+          src="../Logo/logo_tablero_ac.png" style="width:50px; height:50px"
+          alt=""
+          class=""
+           />
+           <h1 class="Help-Desk">Gestor de Tareas</h1>
+      </div>
+      <div class="buscador-container">
+        <input type="text" id="cuadroBusqueda" placeholder="Buscar..." />
+        <button id="botonBusqueda">Buscar</button>
+    </div>
+         <nav>        
+        <ul id="lista_nav">
+          <li><a href="../index.html"></a>Inicio</li>
+          <li><a href="../pages/ingresarTarea.html">Ingresar Tarea</a></li>          
+          </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Crear cuenta de usuario</h2>
+      <p>
+        La única herramienta de gestión de proyectos que necesita para
+        planificar y realizar el seguimiento del trabajo de cada equipo.
+      </p>
+      <br />
+      <form
+        action="https://formspree.io/f/{form_id}"
+        method="post"
+        class="formulario"
+        style="border-style: double"
+      >
+    
+        <br />
+        <label for="nombre">Nombre [*]</label>
+        <input
+          type="text"
+          id=""
+          name=""
+          size="10"
+          maxlength="15"
+          placeholder="Ingrese su nombre"
+          required
+        />
+        <br /><br />
+        <label for="apellido">Apellido [*]</label>
+        <input
+          type="text"
+          id=""
+          name=""
+          size="10"
+          maxlength="15"
+          placeholder="Ingrese su Apellido"
+          required
+        /><br /><br />
+        <label for="">Email [*]</label>
+        <input
+          type="email"
+          name="Email"
+          id=""
+          placeholder="Ingrese su Email"
+          required
+        /><br /><br />
+        <label for="empresa">Empresa [*]</label>
+        <input
+          type="text"
+          id=""
+          name="Empresa"
+          maxlength="15"
+          placeholder="Ingrese el nombre de empresa"
+          required
+        />
+        <br /><br />
+        <label for="telefono">Telefóno [*]</label>
+        <input
+          type="number"
+          name=""
+          id=""
+          name="Telefóno"
+          placeholder="Ingrese su número de telefóno"
+          required
+        /><br /><br />
+        <label for="correo">Mensaje</label><br /><br />
+        <textarea
+          name="correo"
+          id=""
+          placeholder="Ingrese su mensaje"
+          cols="32"
+          rows="10"
+        ></textarea
+        ><br /><br />
+        <input type="checkbox" name="condiciones" id= "terminos" required />
+        He leído y acepto los términos y condiciones de uso. Estoy de acuerdo con el
+        Acuerdo de cliente Help Desk, que incorpora por referencia la
+        Términos específicos de productos de IA y reconocer la
+        política de privacidad.
+        <br /><br />
+        <input class="enviar-btn" type="submit" value="Inscribirse" />
+      </form>
+    </main>
+
+    <footer>
+      <nav>
+        <i
+          class="fa-brands fa-whatsapp"
+          style="color: green; font-size: 40px"
+        ></i>
+        <i
+          class="fa-brands fa-instagram"
+          style="color: red; font-size: 40px"
+        ></i>
+        <i class="fa-brands fa-github sy" style="font-size: 40px"></i>
+      </nav>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/2067fe5f8f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
