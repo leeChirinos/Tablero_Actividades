@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -45,111 +46,104 @@
       <form
         action="https://formspree.io/f/{form_id}"
         method="post"
-        class="formulario"
+        class="listadoTarea"
+        id="listadoTarea"
         style="border-style: double"
       >
     
         <br />
-        <label for="nombre">Nombre del Proyecto [*]</label>
+        <label for="nombre-p">* Nombre del Proyecto:</label>
         <input
           type="text"
-          id=""
-          name=""
+          id="nombre-p"
+          name="nombre-p"
           size="15"
-          maxlength="50"
+          maxlength="30"
           placeholder="Ingrese nombre de proyecto"
           required
         />
         <br /><br />
-        <label for="responsable">Responsable [*]</label>
+        <label for="responsable">* Responsable:</label>
         <input
           type="text"
-          id=""
-          name=""
+          id="responsable"
+          name="responsable"
           size="15"
           maxlength="20"
           placeholder="Ingrese nombre de responsable"
           required
         /><br /><br />
 
-        <label for="fecha_inicio">Fecha de Inicio[*]</label>
+        <label for="fecha-inicio">* Fecha de Inicio:</label>
         <input
           type="date"
-          id=""
-          name=""
+          id="fecha-inicio"
+          name="fecha-inicio"
           size="15"
-          placeholder="Ingrese fecha de inicio"
           required
         /><br /><br />
 
-        <label for="responsable">Por Hacer [*]</label>
+        <label for="por-hacer">Por Hacer:</label>
         <input
           type="text"
-          id=""
-          name=""
+          id="por-hacer"
+          name="por-hacer"
           size="15"
-          maxlength="20"
-          placeholder="Ingrese tarea por hacer"
-          required
-        /><br /><br />
+          maxlength="50"
+          placeholder="Ingrese descripción de tarea"
+          /><br /><br />
 
-        <label for="en_proceso">En Proceso [*]</label>
+        <label for="en-proceso">En Proceso:</label>
         <input
           type="text"
-          id=""
-          name=""
+          id="en-proceso"
+          name="en-proceso"
           size="15"
-          maxlength="20"
-          placeholder="Ingrese las tareas en proceso"
-          required
-        /><br /><br />
+          maxlength="50"
+          placeholder="Ingrese el estado actual del proceso"
+          /><br /><br />
 
-        <label for="por_revisión">Por Revisión [*]</label>
+        <label for="por-revision">Estado de Revisión:</label>
         <input
           type="text"
-          id=""
-          name=""
+          id="por-revision"
+          name="por-revision"
           size="15"
-          maxlength="20"
-          placeholder="Ingrese tareas por revisar"
-          required
-        /><br /><br />
+          maxlength="50"
+          placeholder="Indique el estatus de la revisión"
+          /><br /><br />
 
-        <label for="finalizada">Tarea finalizada [*]</label>
+        <label for="finalizada">Tarea finalizada:</label>
         <input
           type="text"
-          id=""
-          name=""
+          id="finalizada"
+          name="finalizada"
           size="15"
           maxlength="20"
-          placeholder="Tarea finalizada"
-          required
-        /><br /><br />
-        <label for="fecha_final">Fecha de Finalización[*]</label>
+          placeholder="Indique el tipo de Finalización"
+          /><br /><br />
+        <label for="fecha-final">Fecha de Finalización:</label>
         <input
           type="date"
-          id=""
-          name=""
+          id="fecha-final"
+          name="fecha-final"
           size="15"
-          placeholder="Ingrese fecha de inicio"
-          required
-        /><br /><br />
+          /><br /><br />
 
-        <label for="dudas">Dudas [*]</label>
+        <label for="dudas">Dudas:</label>
         <input
           type="text"
-          id=""
-          name=""
+          id="dudas"
+          name="dudas"
           size="15"
-          maxlength="20"
-          placeholder="Tarea finalizada"
+          maxlength="70"
+          placeholder="Ingrese cualquier duda"
           required
         /><br /><br />
 
                 
         <input class="tarea-btn" type="submit" value="Agendar Tarea" />
       </form>
-
     </main>
 
     <footer>
@@ -157,12 +151,15 @@
         <i
           class="fa-brands fa-whatsapp"
           style="color: green; font-size: 40px"
+          title="wasap"
         ></i>
         <i
           class="fa-brands fa-instagram"
           style="color: red; font-size: 40px"
+          title="instagram"
         ></i>
-        <i class="fa-brands fa-github sy" style="font-size: 40px"></i>
+        <i class="fa-brands fa-github sy" style="font-size: 40px" title="github">
+        </i>
       </nav>
     </footer>
     <script
@@ -170,4 +167,5 @@
       crossorigin="anonymous"
     ></script>
   </body>
-</html>
+  <script src="./js/formulario.js"></script>
+  </html>
