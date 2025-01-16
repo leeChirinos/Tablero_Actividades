@@ -15,129 +15,20 @@
   <link rel="stylesheet" href="../css/style.css" />
   <title>Gestor de Tareas para Proyecto</title>
 </head>
-
 <body>
   <header style="text-align: center;">
     <div>
       <img src="../Logo/logo_tablero_ac.png" style="width:50px; height:50px" alt="" class="" />
       <h1 class="Help-Desk">Gestor de Tareas</h1>
     </div>
-    <div class="buscador-container">
-      <input type="text" id="cuadroBusqueda" placeholder="Buscar..." />
-      <button id="botonBusqueda">Buscar</button>
-    </div>
-    <nav>
+     <nav>
       <ul id="lista_nav">
         <li><a href="../index.html">Inicio</a></li>
         <li><a href="../pages/ingresarTarea.html">Ingresar Tarea</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <h2>Crear cuenta de usuario</h2>
-    <p>
-      La única herramienta de gestión de proyectos que necesita para
-      planificar y realizar el seguimiento del trabajo de cada equipo.
-    </p>
-    <br />
-    <form
-        action="https://formspree.io/f/{form_id}"
-        class="formulario"
-        id="formulario" onsubmit="return validarFormulario()"
-        style="border-style: double"
-         >   
-        <br />
-         <!--Usuario -->
-        <label for="usuario">Usuario [*]:</label>
-        <input type="text" id="usuario" name="usuario" placeholder="leeChirinos123" required>
-        <span id="error-usuario" class="error"></span>
-        <br><br>
-        <!--Nombre -->
-        <label for="nombre">Nombre [*]:</label>
-        <input
-          type="text"
-          id="nombre"
-          name="nombre"
-          size="10"
-          maxlength="15"
-          placeholder="Ingrese su nombre"
-          required/>        
-        <span id="error-nombre" class="error"></span>
-        <br /><br />
-        <!-- Apellido -->
-        <label for="apellido">Apellido [*]</label>
-        <input
-          type="text"
-          id="apellido"
-          name="apellido"
-          size="10"
-          maxlength="15"
-          placeholder="Ingrese su Apellido"
-          required/>       
-          <span id="error-apellido" class="error"></span>
-        <br /><br />
-        <!-- Email -->
-        <label for="">Email [*]</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Ingrese su Email"
-          required/>        
-        <span id="error-correo" class="error"></span>
-        <br /><br />
-        <!-- Contraseña -->
-        <label for="">Contraseña [*]</label>
-        <input
-          type="password"
-          name="contraseña"
-          id="contraseña"
-          placeholder="Ingrese su Contraseña"
-          required/>        
-        <span id="error-contraseña" class="error"></span>
-        <br /><br />
-        <!-- Empresa -->
-        <label for="empresa">Empresa [*]</label>
-        <input
-          type="text"
-          id="empresa"
-          name="empresa"
-          maxlength="15"
-          placeholder="Ingrese el nombre de empresa"
-          required/>
-          <span id="error-empresa" class="error"></span>
-        <br /><br />
-        <!-- Telefono -->
-        <label for="telefono">Telefóno [*]</label>
-        <input
-          type="number"
-          name="telefono"
-          id="telefono"
-          name="Telefóno"
-          placeholder="Ingrese su número de telefóno"
-          required/>        
-        <span id="error-telefono" class="error"></span>
-        <br /><br />
-        <!-- Mensaje -->
-        <label for="correo">Mensaje</label><br /><br />
-        <textarea
-          name="correo"
-          id="mensaje"
-          placeholder="Ingrese su mensaje"
-          cols="32"
-          rows="10"
-        ></textarea
-        ><br /><br />
-        <input type="checkbox" class ="condiciones" id= "condiciones" required  style="size: 9;"/>
-        He leído y acepto los términos y condiciones de uso. Estoy de acuerdo con el
-        Acuerdo de cliente Help Desk, que incorpora por referencia la
-        Términos específicos de productos de IA y reconocer la
-        política de privacidad.
-        <br /><br />
-        <input class="enviar-btn" type="submit" value="Inscribirse" />
-      </form>
-
-  </main>
+  
   <script src="./js/formulario.js"></script>
   <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
   <footer>
