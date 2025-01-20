@@ -1,167 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../css/style.css" />
-    <title>Gestor de Tareas para Proyecto</title>
-  </head>
-  <body>
-    <header style="text-align: center;">
-      <div >
-        <img  
-          src="../Logo/logo_tablero_ac.png" style="width:50px; height:50px"
-          alt=""
-          class=""
-           />
-           <h1 class="Help-Desk">Gestor de Tareas</h1>
-      </div>
-       <nav>        
-        <ul id="lista_nav">
-          <li><a href="../index.html">Inicio</a></li> 
-          <li><a href="../pages/crearCuenta.html">Crear Cuenta</a></li>                  
-          </ul>
-      </nav>
-    </header>
-    <main>
-      <h2>Ingrese Tarea</h2>
-      <br />
-      <form
-        action="https://formspree.io/f/{form_id}"
-        method="post"
-        class="listadoTarea"
-        id="listadoTarea"
-        style="border-style: double"
-      >
-    
-        <br />
-        <label for="nombre-p">* Nombre del Proyecto:</label>
-        <input
-          type="text"
-          id="nombre-p"
-          name="nombre-p"
-          size="15"
-          maxlength="30"
-          placeholder="Ingrese nombre de proyecto"
-          required
-        />
-        <br /><br />
-        <label for="responsable">* Responsable:</label>
-        <input
-          type="text"
-          id="responsable"
-          name="responsable"
-          size="15"
-          maxlength="20"
-          placeholder="Ingrese nombre de responsable"
-          required
-        /><br /><br />
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="../css/style.css"
+		/>
+		<title>Gestor de Tareas - Agregar Tarea</title>
+	</head>
+	<body>
+		<header style="text-align: center">
+			<div>
+				<img
+					src="../Logo/logo_tablero_ac.png"
+					style="width: 50px; height: 50px"
+					alt="Logo Aplicación"
+				/>
+				<h1 class="Help-Desk">Gestor de Tareas</h1>
+			</div>
+			<nav aria-label="Navegación Principal">
+				<ul id="lista_nav">
+					<li><a href="../index.html">Inicio</a></li>
+					<li>
+						<a href="../pages/crearCuenta.html"
+							>Crear Cuenta de Usuario</a
+						>
+					</li>
+					<li aria-current="page">Agregar Tarea</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h2>Agregar Tarea</h2>
 
-        <label for="fecha-inicio">* Fecha de Inicio:</label>
-        <input
-          type="date"
-          id="fecha-inicio"
-          name="fecha-inicio"
-          size="15"
-          required
-        /><br /><br />
+			<p>
+				Complete el siguiente formulario para agregar una nueva tarea.
+			</p>
 
-        <label for="por-hacer">Por Hacer:</label>
-        <input
-          type="text"
-          id="por-hacer"
-          name="por-hacer"
-          size="15"
-          maxlength="50"
-          placeholder="Ingrese descripción de tarea"
-          /><br /><br />
+			<form
+				action="https://formspree.io/f/{form_id}"
+				method="post"
+				class="listadoTarea"
+				id="listadoTarea"
+				style="border-style: double"
+			>
+				<fieldset>
+					<legend>Información de la Nueva Tarea</legend>
+					<label for="nombre-p">* Nombre de la Tarea:</label>
+					<input
+						type="text"
+						id="nombre-p"
+						name="nombre-p"
+						size="15"
+						maxlength="30"
+						required
+					/>
+					<br />
+					<label for="responsable">* Responsable de la Tarea:</label>
+					<input
+						type="text"
+						id="responsable"
+						name="responsable"
+						size="15"
+						maxlength="20"
+						required
+					/><br />
 
-        <label for="en-proceso">En Proceso:</label>
-        <input
-          type="text"
-          id="en-proceso"
-          name="en-proceso"
-          size="15"
-          maxlength="50"
-          placeholder="Ingrese el estado actual del proceso"
-          /><br /><br />
+					<label for="fecha-inicio">* Fecha de Inicio:</label>
+					<input
+						type="date"
+						id="fecha-inicio"
+						name="fecha-inicio"
+						size="15"
+						required
+						aria-describedby="info"
+					/>
+					<p id="info">
+						Ingrese 2 dígitos para el día, 2 dígitos para el més y 4
+						dígitos para el año.
+					</p>
+				</fieldset>
+				<br />
+				<button
+					class="tarea-btn"
+					type="submit"
+					value="Agendar Tarea"
+				>
+					Agregar Tarea
+				</button>
+			</form>
+		</main>
 
-        <label for="por-revision">Estado de Revisión:</label>
-        <input
-          type="text"
-          id="por-revision"
-          name="por-revision"
-          size="15"
-          maxlength="50"
-          placeholder="Indique el estatus de la revisión"
-          /><br /><br />
+		<footer>
+			<nav aria-label="Navegación Secundaria">
+				<h2>Redes Sociales</h2>
 
-        <label for="finalizada">Tarea finalizada:</label>
-        <input
-          type="text"
-          id="finalizada"
-          name="finalizada"
-          size="15"
-          maxlength="20"
-          placeholder="Indique el tipo de Finalización"
-          /><br /><br />
-        <label for="fecha-final">Fecha de Finalización:</label>
-        <input
-          type="date"
-          id="fecha-final"
-          name="fecha-final"
-          size="15"
-          /><br /><br />
-
-        <label for="dudas">Dudas:</label>
-        <input
-          type="text"
-          id="dudas"
-          name="dudas"
-          size="15"
-          maxlength="70"
-          placeholder="Ingrese cualquier duda"
-          required
-        /><br /><br />
-
-                
-        <input class="tarea-btn" type="submit" value="Agendar Tarea" />
-      </form>
-    </main>
-
-    <footer>
-      <nav>
-        <i
-          class="fa-brands fa-whatsapp"
-          style="color: green; font-size: 40px"
-          title="wasap"
-        ></i>
-        <i
-          class="fa-brands fa-instagram"
-          style="color: red; font-size: 40px"
-          title="instagram"
-        ></i>
-        <i class="fa-brands fa-github sy" style="font-size: 40px" title="github">
-        </i>
-      </nav>
-    </footer>
-    <script
-      src="https://kit.fontawesome.com/2067fe5f8f.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
-  <script src="./js/formulario.js"></script>
-  </html>
+				<ul>
+					<li>
+						<i
+							class="fa-brands fa-whatsapp"
+							style="color: green; font-size: 40px"
+							title="WhatsApp"
+						>
+							WhatsApp
+						</i>
+					</li>
+					<li>
+						<i
+							class="fa-brands fa-instagram"
+							style="color: red; font-size: 40px"
+							title="Instagram"
+						>
+							Instagram
+						</i>
+					</li>
+					<li>
+						<i
+							class="fa-brands fa-github sy"
+							style="font-size: 40px"
+							title="GitHub"
+						>
+							GitHub
+						</i>
+					</li>
+				</ul>
+			</nav>
+			<p>
+				© Todos los derechos reservados. Desarrollado por Lee Chirinos -
+				2024
+			</p>
+		</footer>
+		<script
+			src="https://kit.fontawesome.com/2067fe5f8f.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
+	<script src="./js/formulario.js"></script>
+</html>
