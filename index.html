@@ -1,147 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Gestor de Tareas para Proyecto</title>
-  </head>
-  <body>
-    <header style="text-align: center;">
-      <div >
-        <img  
-          src="./Logo/logo_tablero_ac.png" style="width:50px; height:50px"
-          alt=""
-          class=""
-           />
-           <h1 class="Help-Desk">Gestor de Tareas</h1>
-      </div>
-      <div class="buscador-container">
-        <input type="text" id="cuadroBusqueda" placeholder="Buscar..." />
-        <button id="botonBusqueda">Buscar</button>
-    </div>
-         <nav>        
-        <ul id="lista_nav">
-          <li>Inicio</li>
-          <li><a href="./pages/crearCuenta.html">Crear Cuenta</a></li>
-          <li><a href="./pages/ingresarTarea.html">Ingresar Tarea</a></li>          
-          </ul>
-      </nav>
-    </header><br><br>
-    <main>
-        <div class="container">
-            <h2>Gestión de Proyectos</h2>
-            <table class="proyecto-tabla" > <caption>Tabla general de tareas y estados</caption>
-              <thead>
-                <tr>
-                  <th>Id_Tarea</th>
-                  <th>Nombre del Proyecto</th>
-                  <th>Responsable</th>
-                  <th>Fecha de Inicio</th>
-                  <th>Por Hacer</th>
-                  <th>En proceso</th>
-                  <th>Por revisión</th>
-                  <th>Finalizada</th>                 
-                  <th>Fecha de Finalización</th>
-                  <th>Dudas</th>
-                </tr>
-              </thead>  
-              <tbody>           
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="css/style.css"
+		/>
+		<title>Gestor de Tareas - Inicio</title>
+	</head>
+	<body>
+		<header style="text-align: center">
+			<div>
+				<img
+					src="./Logo/logo_tablero_ac.png"
+					style="width: 50px; height: 50px"
+					alt="Logo aplicación"
+				/>
+				<h1 class="Help-Desk">Gestor de Tareas</h1>
+			</div>
+			<nav aria-label="Navegación Principal">
+				<ul id="lista_nav">
+					<li aria-current="page">Inicio</li>
+					<li>
+						<a href="./pages/crearCuenta.html"
+							>Crear Cuenta de Usuario</a
+						>
+					</li>
+					<li>
+						<a href="./pages/ingresarTarea.html">Agregar Tarea</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-              <tr>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-              </tr>
+		<main>
+			<div class="container">
+				<h2>Listado General de Tareas</h2>
+				<div class="buscador-container">
+					<label for="buscador"
+						>Buscar por: Código, nombre de Tarea, o responsable.
+					</label>
+					<input
+						type="search"
+						id="buscador"
+					/>
+				</div>
 
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <td>                
-              </td>   
-            </tbody>         
-            </table>
-            <div class="botones">
-              <button class="editar-btn">Editar</button>
-              <button class="eliminar-btn">Eliminar</button>
-              <button class="agregar-btn">Agregar</button>
-              </div>
-          </div>    
-      
-    </main><br><br>
-        <footer>
-      <nav>
-        <i class="fa-brands fa-whatsapp" style="color: green;font-size: 40px;" title="wasap"></i>
-        <i class="fa-brands fa-instagram" style="color: red;font-size: 40px;" title="instagram"></i>
-        <i class="fa-brands fa-github sy" style="font-size: 40px;" title="github"></i>
-      </nav>
-    </footer>
-    <script src="./js/formulario.js"></script>
-    <script src="https://kit.fontawesome.com/2067fe5f8f.js" crossorigin="anonymous"></script>
-  </body>
+				<table
+					class="proyecto-tabla"
+					id="miTabla"
+				>
+					<caption>
+						Tabla general de tareas y estados
+					</caption>
+					<thead>
+						<tr>
+							<th>Código de Tarea</th>
+							<th>Nombre de Tarea</th>
+							<th>Responsable de Tarea</th>
+							<th>Fecha de Inicio</th>
+							<th>Estado</th>
+							<th>Editar</th>
+							<th>Eliminar</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>
+								<select
+									name="estadoTarea"
+									id="idEstado"
+								>
+									<option value="01">En espera</option>
+									<option value="02">En proceso</option>
+									<option value="03">Finalizada</option>
+								</select>
+							</td>
+							<td>
+								<button
+									class="editar-btn"
+									id="editarTarea"
+								>
+									Editar Tarea
+								</button>
+							</td>
+							<td>
+								<button
+									class="eliminar-btn"
+									id="eliminarTarea"
+								>
+									Eliminar Tarea
+								</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</main>
+
+		<footer>
+			<h2>Redes Sociales</h2>
+			<nav aria-label="Navegación Secundaria">
+				<ul>
+					<li>
+						<i
+							class="fa-brands fa-whatsapp"
+							style="color: green; font-size: 40px"
+							title="whatsApp"
+						></i>
+					</li>
+					<li>
+						<i
+							class="fa-brands fa-instagram"
+							style="color: red; font-size: 40px"
+							title="instagram"
+						></i>
+					</li>
+					<li>
+						<i
+							class="fa-brands fa-github sy"
+							style="font-size: 40px"
+							title="github"
+						></i>
+					</li>
+				</ul>
+			</nav>
+			<p>
+				© Todos los derechos reservados. Desarrollado por Lee Chirinos -
+				2024
+			</p>
+		</footer>
+		<script src="./js/formulario.js"></script>
+		<script src="./js/buscador2.js"></script>
+		<script
+			src="https://kit.fontawesome.com/2067fe5f8f.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
